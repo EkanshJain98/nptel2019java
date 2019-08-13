@@ -21,4 +21,6 @@ if(result==n)
 System.out.println("1");                    
 else
 System.out.println("0");
-//store the output(1 or 0) in result variable.           
+//store the output(1 or 0) in result variable.    
+}
+}
