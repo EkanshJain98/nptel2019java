@@ -23,3 +23,5 @@ else if (z>x&& z>y){
   result = result+z;
  System.out.print(result); 
 }
+}
+}
