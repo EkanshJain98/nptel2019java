@@ -1,0 +1,19 @@
+Java Week 1:Q3
+
+Consider First n even numbers starting from zero(0).Complete the code segment to calculate sum of  all the numbers divisible by 3 from 0 to n.Print the sum.
+
+import java.util.Scanner;
+public class Exercise1_3 {
+       public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	   int n=sc.nextInt();
+	  int sum=0;
+//Use for or while loop to sum first n positive even numbers starting from 0 which are divisible by 3.
+int i;
+for(i=0;i<=n;i++){
+  if(i%3==0){
+   sum=sum+2*i; 
+  }
+ 
+}
+ System.out.println(sum);    
