@@ -1,0 +1,45 @@
+Java Week 7: Q1
+
+Complete the following code fragment to read three integer values from the keyboard and find the sum of the values. Declare a variable "sum" of type int and store the result in it.
+
+// Write the appropriate statement(s) to import the package(s) you need in your program
+import java.util.*;
+public class Question1{ 
+        public static void main (String[] args){
+
+//Write the appropriate code to read the 3 integer values and find their sum.
+Scanner obj = new Scanner(System.in);
+         int a =  obj.nextInt();
+         int b =  obj.nextInt();
+         int c =  obj.nextInt();
+         int sum = a+b+c;         
+         System.out.println(sum);
+  }
+}
+
+Note:
+You can use DataInputStream class instead of Scanner class but NPTEL complier won't allow you to use DataInputClass beacuse readLine() is deprecated.
+
+Other Solution-------------------
+
+
+import java.io.*;
+public class Question1 {
+
+	public static void main(String[] args) throws IOException {
+DataInputStream obj = new DataInputStream(System.in);
+String a,b,c;
+System.out.print("Enter the values\n");
+System.out.flush();
+a = obj.readLine();	
+b = obj.readLine();	
+c = obj.readLine();	
+int d = Integer.parseInt(a);
+int e = Integer.parseInt(b);
+int f = Integer.parseInt(c);
+System.out.print(d+e+f);
+}
+	         	
+	}
+
+
