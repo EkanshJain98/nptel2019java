@@ -1,0 +1,48 @@
+Week 8 : Q3
+
+Write a program which will print a pyramid of  "numbers" 's of height "n" and print the sum of all number's in the pyramid.
+
+For example:
+
+input: 5
+
+output: 
+        1 
+      1 2 3 
+    1 2 3 4 5 
+  1 2 3 4 5 6 7 
+1 2 3 4 5 6 7 8 9 
+95
+
+import java.util.*;
+public class Pattern3 {
+    public static void main(String[] args) {
+        Scanner inr = new Scanner(System.in);
+	int rows = inr.nextInt();
+       int i,j,k,c,t=1,s=0;
+   
+    c=rows-1;
+   
+    for(i=1;i<=rows;i++)
+    {
+         int start=1;
+        for(j=1;j<=c;j++)
+        {
+            System.out.print("  ");
+            
+        }
+        for(k=1;k<=t;k++)
+        {
+            System.out.print(start+" ");
+          s=start+s;
+            start++;
+                
+        }
+        c--;
+        t+=2;
+        
+        System.out.print("\n");
+    }    
+      System.out.print(s);
+} 
+}// Add the necessary code in the below space
