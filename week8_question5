@@ -19,7 +19,6 @@ output :
    |
    
    
-   
 import java.util.*;
 
 public class Pattern5 {
@@ -27,20 +26,41 @@ public class Pattern5 {
            Scanner inr = new Scanner(System.in);
 	   int n = inr.nextInt();
            // Add the necessary code in the below space    
-   
+     if(n==3){
+       System.out.print(" _ \n"+" _|\n"+" _|");
+     }
+     else if(n==0){
+       System.out.print(" _ \n"+"| |\n"+"|_|\n");
+     }
+     else if(n==2){
+       System.out.print(" _ \n"+" _|\n"+"|_ \n");
+     }
+     else if(n==7){
+       System.out.print(" _ \n"+"  |\n"+"  |\n");
+     }
+      else if(n==6){
+       System.out.print(" _ \n"+"|_ \n"+"|_|\n");
+     }
+      else if(n==8){
+       System.out.print(" _ \n"+"|_|\n"+"|_|\n");
+     }
+      else if(n==9){
+       System.out.print(" _ \n"+"|_|\n"+" _|\n");
+     }  
+    
      if(n==5){
        System.out.println(" _ ");
        System.out.println("|"+"_ ");
        System.out.print(" _"+"|");
        
-     }
+     }else
      if(n==4){
        
       System.out.println("   ");
        System.out.println("|_|");
        System.out.print("  |");
        
-     }
+     }else
      if(n==1){
        
       System.out.println("");
@@ -49,8 +69,6 @@ public class Pattern5 {
         
      }
         
-       
-       
      }
    }
    
