@@ -48,7 +48,7 @@ public class Pattern5 {
        System.out.print(" _ \n"+"|_|\n"+" _|\n");
      }  
     
-     if(n==5){
+    else if(n==5){
        System.out.println(" _ ");
        System.out.println("|"+"_ ");
        System.out.print(" _"+"|");
